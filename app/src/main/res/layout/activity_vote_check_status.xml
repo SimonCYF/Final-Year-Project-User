@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_grad">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="52dp">
+
+            <TextView
+                android:id="@+id/todayCovidCases"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoSizeMaxTextSize="27sp"
+                android:autoSizeMinTextSize="23sp"
+                android:autoSizeStepGranularity="1sp"
+                android:autoSizeTextType="uniform"
+                android:fontFamily="@font/extraboldfont"
+                android:gravity="center_horizontal"
+                android:text="Vote Status Check Page"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/boldfont"
+                android:text="IC Num :"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/voteIcNum"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/boldfont"
+                android:text=" Voter IC Number"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/voteIcNum"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/boldfont"
+                android:text="Name    :"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/voteName"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/voteIcNum"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/boldfont"
+                android:text=" Voter Name"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/voteName"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/boldfont"
+                android:text="State     :"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/voteState"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/voteName"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/boldfont"
+                android:text=" Voter State"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/voteState"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/boldfont"
+                android:text="Status   :"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/voteStatus"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/voteState"
+                android:layout_marginLeft="120dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/boldfont"
+                android:text="Voter Status"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/voteCandidateStatus"
+            android:layout_width="170dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:padding="4dp"
+            android:layout_height="170dp"
+            android:background="@drawable/circle"
+            android:src="@drawable/ic_launcher_background"/>
+
+        <TextView
+            android:id="@+id/textViewVerifyVoterStatus"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/extraboldfont"
+            android:text="Vote Page"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/proceedToVotePageFloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="33dp"
+        android:layout_marginTop="60dp"
+        android:padding="5dp"
+        android:clickable="true"
+        android:text="Proceed To Vote!"
+        android:backgroundTint="@color/Blue"
+        android:textColor="@android:color/white"
+        app:icon="@drawable/ic_baseline_arrow_forward_24"
+        app:iconTint="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp">
+
+        <include
+            android:id="@+id/mytoolbar"
+            layout="@layout/activity_toolbar" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

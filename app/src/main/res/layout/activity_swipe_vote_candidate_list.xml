@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <GridLayout
+        android:rowCount="10"
+        android:columnCount="1"
+        android:layout_marginTop="1dp"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menuPartyCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/supremelightgrey"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="4dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/voteCandidateImage"
+                        android:layout_width="85dp"
+                        android:scaleType="centerCrop"
+                        android:padding="4dp"
+                        android:layout_height="85dp"
+                        android:background="@drawable/circle"
+                        android:src="@drawable/ic_launcher_background"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/voteCandidateName"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/boldfont"
+                            android:text="Name"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/voteCandidateState"
+                            android:layout_height="wrap_content"
+                            android:text="State"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/regularfont"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/voteCandidateParty"
+                            android:layout_height="wrap_content"
+                            android:text="Party"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/regularfont"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/voteCandidatePropaganda"
+                            android:text="Propaganda"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/regularfont"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</LinearLayout>
+
+

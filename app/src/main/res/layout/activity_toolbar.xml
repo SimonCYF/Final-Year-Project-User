@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="5dp"
+    android:layout_weight="1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_alignParentBottom="true">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        android:elevation="6dp"
+        app:tabIconTint="@color/teal_700"
+        app:tabIndicatorAnimationDuration="1200"
+        app:tabIndicatorColor="@color/white"
+        app:tabInlineLabel="true"
+        app:tabMode="scrollable"
+        app:tabRippleColor="@color/purple_200"
+        app:tabTextColor="@color/black">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/navToVote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="insideInset"
+            android:text="Vote"
+            android:textColor="@color/pearlwhite"
+            android:textStyle="bold">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/navToViewCandidate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="View Candidate">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/navToViewParty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="View Party">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/navToViewResults"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="View Results">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/navToViewPDF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="View SPR PDF"></com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/navToViewMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nearest Voting Station">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/navToViewProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Profile">
+
+        </com.google.android.material.tabs.TabItem>
+
+    </com.google.android.material.tabs.TabLayout>
+
+</RelativeLayout>
+
+
